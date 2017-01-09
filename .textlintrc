@@ -1,0 +1,7 @@
+{
+	"rules": {
+		"ja-no-redundant-expression": true,
+		"spellcheck-tech-word": true,
+		"no-mix-dearu-desumasu": true
+	}
+}
