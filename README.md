@@ -1,15 +1,22 @@
 # thesislint
 
+![](./ss.png)
+
 ## 使い方
 
-### 1 `textlint`をインストールしておく。
+### 1. `textlint`をインストールする
+
 ```
 npm i -g textlint
 npm i -g textlint-rule-max-ten textlint-rule-spellcheck-tech-word textlint-rule-no-mix-dearu-desumasu ja-no-redundant-expression
 ```
 
-### 2 texファイルがあるディレクトリで`go run thesislint.go`を実行する
+### 2. pandocをインストールする
+
+[ここ](http://pandoc.org)
+
+### 3. texファイルがあるディレクトリで`go run thesislint.go`を実行する
+
 ```
 go run thesislint.go
 ```
-
