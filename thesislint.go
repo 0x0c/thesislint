@@ -13,7 +13,7 @@ import (
 
 func main() {
 	if err := os.Mkdir("tmp", 0777); err != nil {
-		if err := os.RemoveAll("tmp"); err != nil {
+		if err := os.RemoveAll("thesislint_tmp"); err != nil {
 			fmt.Println(err)
 		}
 	}

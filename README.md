@@ -25,4 +25,4 @@ go run thesislint.go
 
 ### 4. 自戒の念を込めて文章を修正する
 
-表示される行番号は`tmp/`以下のMarkdownファイルのものであることに注意
+表示される行番号は`thesislint_tmp/`以下のMarkdownファイルのものであることに注意
