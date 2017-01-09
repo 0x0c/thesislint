@@ -20,3 +20,5 @@ npm i -g textlint-rule-max-ten textlint-rule-spellcheck-tech-word textlint-rule-
 ```
 go run thesislint.go
 ```
+
+### 4. 自戒の念を込めて文章を修正する
