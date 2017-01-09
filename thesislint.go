@@ -53,9 +53,5 @@ func main() {
 		o = rep.ReplaceAllString(o, "\x1b[31m error \x1b[0m")
 		
 		fmt.Println(o)
-
-		if err := os.RemoveAll("tmp"); err != nil {
-			fmt.Println(err)
-		}
 	}
 }
