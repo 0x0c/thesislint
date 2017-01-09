@@ -6,7 +6,7 @@
 
 ## 使い方
 
-### 1. `textlint`をインストールする
+### 1. textlintをインストールする
 
 ```
 npm i -g textlint
