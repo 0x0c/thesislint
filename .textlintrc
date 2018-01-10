@@ -9,7 +9,7 @@
 		"textlint-rule-no-dropping-the-ra": true,
 		"textlint-rule-no-doubled-conjunctive-particle-ga": true,
 		"textlint-rule-no-doubled-conjunction": true,
-		"textlint-rule-ja-hiragana-daimeishi": true,
+		// "textlint-rule-ja-hiragana-daimeishi": true,
 		"textlint-rule-ja-hiragana-keishikimeishi": true,
 		"textlint-rule-ja-hiragana-fukushi": true,
 		"textlint-rule-ja-hiragana-hojodoushi": true,
