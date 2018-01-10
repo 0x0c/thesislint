@@ -13,7 +13,7 @@ import (
 
 func main() {
 	if err := os.Mkdir("tmp", 0777); err != nil {
-		if err := os.RemoveAll("thesislint_tmp"); err != nil {
+		if err := os.RemoveAll("tmp"); err != nil {
 			fmt.Println(err)
 		}
 	}
@@ -35,13 +35,14 @@ func main() {
 				filenames = append(filenames, "tmp/" + filename + ".md")
 				wg.Add(1)
 				go func() {
-					exec.Command("pandoc", "-s", name + ".tex", "-o", "tmp/" + name + ".md").Run()
+					exec.Command("cp", name + ".tex", "tmp/" + name + ".md").Run()
+					// exec.Command("pandoc", "-s", name + ".tex", "-o", "tmp/" + name + ".md").Run()
 					wg.Done()
 				}()
 			}
 		}
 		wg.Wait()
-		var cmd = exec.Command("textlint", "--dry-run")
+		var cmd = exec.Command("node_modules/.bin/textlint", "--dry-run")
 		cmd.Args = filenames
 		out, _ := cmd.CombinedOutput()
 		var o = string(out)

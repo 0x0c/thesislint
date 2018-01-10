@@ -3,23 +3,51 @@
 		"ja-no-redundant-expression": true,
 		"spellcheck-tech-word": true,
 		"no-mix-dearu-desumasu": true,
-		"textlint-rule-no-doubled-joshi": true,
-		"textlint-rule-no-double-negative-ja": true,
-		"textlint-rule-ja-no-abusage": true,
-		"textlint-rule-no-dropping-the-ra": true,
-		"textlint-rule-no-doubled-conjunctive-particle-ga": true,
-		"textlint-rule-no-doubled-conjunction": true,
-		// "textlint-rule-ja-hiragana-daimeishi": true,
-		"textlint-rule-ja-hiragana-keishikimeishi": true,
-		"textlint-rule-ja-hiragana-fukushi": true,
-		"textlint-rule-ja-hiragana-hojodoushi": true,
+		"no-doubled-joshi": {
+            "min_interval" : 1,
+            "strict": false,
+            "allow": []
+        },
+		"no-double-negative-ja": true,
+		"ja-no-abusage": true,
+		"no-dropping-the-ra": true,
+		"no-doubled-conjunctive-particle-ga": true,
+		"no-doubled-conjunction": true,
+		// "ja-hiragana-daimeishi": true,
+		"ja-hiragana-keishikimeishi": true,
+		"ja-hiragana-fukushi": true,
+		"ja-hiragana-hojodoushi": true,
 		"general-novel-style-ja": {
             // 各段落の先頭に許可する文字 (false: チェックしない)
-            "chars_leading_paragraph": "　「『【〈《（(“\"‘'［[〔｛{＜<",
+            "chars_leading_paragraph": false,
             // 閉じ括弧の手前に句読点(。、)を置かない
             "no_punctuation_at_closing_quote": true,
+            // 疑問符(？)と感嘆符(！)の直後にスペースを置く
+            "space_after_marks": false,
+            // 連続した三点リーダー(…)の数は偶数にする
+            "even_number_ellipsises": false,
+            // 連続したダッシュ(―)の数は偶数にする
+            "even_number_dashes": false,
             // 連続した句読点(。、)を許可しない
             "appropriate_use_of_punctuation": true,
-        }
+            // 連続した中黒(・)を許可しない
+            "appropriate_use_of_interpunct": false,
+            // 連続した長音符(ー)を許可しない
+            "appropriate_use_of_choonpu": false,
+            // マイナス記号(−)は数字の前にしか許可しない
+            "appropriate_use_of_minus_sign": false,
+            // アラビア数字の桁数は2桁まで (false: チェックしない)
+            "max_arabic_numeral_digits": false
+		},
+		"ja-no-mixed-period": {
+			// 優先する句点文字
+			"periodMark": "。",
+			// 句点文字として許可する文字列の配列
+			"allowPeriodMarks": ["}", "．"],
+			// 末尾に絵文字を置くことを許可するか
+			"allowEmojiAtEnd": false,
+			// 句点で終わって無い場合に`periodMark`を--fix時に追加するかどうか
+			"forceAppendPeriod": false
+	   }
 	}
 }
