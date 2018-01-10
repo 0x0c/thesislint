@@ -2,6 +2,24 @@
 	"rules": {
 		"ja-no-redundant-expression": true,
 		"spellcheck-tech-word": true,
-		"no-mix-dearu-desumasu": true
+		"no-mix-dearu-desumasu": true,
+		"textlint-rule-no-doubled-joshi": true,
+		"textlint-rule-no-double-negative-ja": true,
+		"textlint-rule-ja-no-abusage": true,
+		"textlint-rule-no-dropping-the-ra": true,
+		"textlint-rule-no-doubled-conjunctive-particle-ga": true,
+		"textlint-rule-no-doubled-conjunction": true,
+		"textlint-rule-ja-hiragana-daimeishi": true,
+		"textlint-rule-ja-hiragana-keishikimeishi": true,
+		"textlint-rule-ja-hiragana-fukushi": true,
+		"textlint-rule-ja-hiragana-hojodoushi": true,
+		"general-novel-style-ja": {
+            // 各段落の先頭に許可する文字 (false: チェックしない)
+            "chars_leading_paragraph": "　「『【〈《（(“\"‘'［[〔｛{＜<",
+            // 閉じ括弧の手前に句読点(。、)を置かない
+            "no_punctuation_at_closing_quote": true,
+            // 連続した句読点(。、)を許可しない
+            "appropriate_use_of_punctuation": true,
+        }
 	}
 }
