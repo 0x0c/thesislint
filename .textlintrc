@@ -17,26 +17,26 @@
     "ja-hiragana-fukushi": true,
     "ja-hiragana-hojodoushi": true,
     "general-novel-style-ja": {
-      "chars_leading_paragraph": false,
-      "no_punctuation_at_closing_quote": true,
-      "space_after_marks": false,
-      "even_number_ellipsises": false,
-      "even_number_dashes": false,
-      "appropriate_use_of_punctuation": true,
-      "appropriate_use_of_interpunct": false,
-      "appropriate_use_of_choonpu": false,
-      "appropriate_use_of_minus_sign": false,
-      "max_arabic_numeral_digits": false
+      "chars_leading_paragraph": false, // 各段落の先頭に許可する文字 (false: チェックしない)
+      "no_punctuation_at_closing_quote": true,  // 閉じ括弧の手前に句読点(。、)を置かない
+      "space_after_marks": false, // 疑問符(？)と感嘆符(！)の直後にスペースを置く
+      "even_number_ellipsises": false, // 連続した三点リーダー(…)の数は偶数にする
+      "even_number_dashes": false, // 連続したダッシュ(―)の数は偶数にする
+      "appropriate_use_of_punctuation": true, // 連続した句読点(。、)を許可しない
+      "appropriate_use_of_interpunct": false, // 連続した中黒(・)を許可しない
+      "appropriate_use_of_choonpu": false, // 連続した長音符(ー)を許可しない
+      "appropriate_use_of_minus_sign": false, // マイナス記号(−)は数字の前にしか許可しない
+      "max_arabic_numeral_digits": false // アラビア数字の桁数は2桁まで (false: チェックしない)
     },
     "no-mixed-zenkaku-and-hankaku-alphabet": true,
     "preset-ja-engineering-paper": true,
     "preset-ja-spacing": true,
     "preset-ja-technical-writing": {
       "ja-no-mixed-period": {
-        "periodMark": "．"
+        "periodMark": "．" // 優先する句点文字
       },
-      "no-doubled-joshi": false,
-      "sentence-length": false
+      "no-doubled-joshi": false, //preset-japaneseと重複のため
+      "sentence-length": false //preset-japaneseと重複のため
     },
     "preset-jtf-style": {
       "1.2.1.句点(。)と読点(、)": false,
