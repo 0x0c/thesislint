@@ -1,53 +1,51 @@
 {
-	"rules": {
-		"ja-no-redundant-expression": true,
-		"spellcheck-tech-word": true,
-		"no-mix-dearu-desumasu": true,
-		"no-doubled-joshi": {
-            "min_interval" : 1,
-            "strict": false,
-            "allow": []
-        },
-		"no-double-negative-ja": true,
-		"ja-no-abusage": true,
-		"no-dropping-the-ra": true,
-		"no-doubled-conjunctive-particle-ga": true,
-		"no-doubled-conjunction": true,
-		// "ja-hiragana-daimeishi": true,
-		"ja-hiragana-keishikimeishi": true,
-		"ja-hiragana-fukushi": true,
-		"ja-hiragana-hojodoushi": true,
-		"general-novel-style-ja": {
-            // 各段落の先頭に許可する文字 (false: チェックしない)
-            "chars_leading_paragraph": false,
-            // 閉じ括弧の手前に句読点(。、)を置かない
-            "no_punctuation_at_closing_quote": true,
-            // 疑問符(？)と感嘆符(！)の直後にスペースを置く
-            "space_after_marks": false,
-            // 連続した三点リーダー(…)の数は偶数にする
-            "even_number_ellipsises": false,
-            // 連続したダッシュ(―)の数は偶数にする
-            "even_number_dashes": false,
-            // 連続した句読点(。、)を許可しない
-            "appropriate_use_of_punctuation": true,
-            // 連続した中黒(・)を許可しない
-            "appropriate_use_of_interpunct": false,
-            // 連続した長音符(ー)を許可しない
-            "appropriate_use_of_choonpu": false,
-            // マイナス記号(−)は数字の前にしか許可しない
-            "appropriate_use_of_minus_sign": false,
-            // アラビア数字の桁数は2桁まで (false: チェックしない)
-            "max_arabic_numeral_digits": false
-		},
-		"ja-no-mixed-period": {
-			// 優先する句点文字
-			"periodMark": "。",
-			// 句点文字として許可する文字列の配列
-			"allowPeriodMarks": ["}", "．"],
-			// 末尾に絵文字を置くことを許可するか
-			"allowEmojiAtEnd": false,
-			// 句点で終わって無い場合に`periodMark`を--fix時に追加するかどうか
-			"forceAppendPeriod": false
-	   }
-	}
+  "rules": {
+    "ja-no-redundant-expression": true,
+    "spellcheck-tech-word": true,
+    "no-mix-dearu-desumasu": true,
+    "no-doubled-joshi": {
+      "min_interval": 1,
+      "strict": false,
+      "allow": []
+    },
+    "no-double-negative-ja": true,
+    "ja-no-abusage": true,
+    "no-dropping-the-ra": true,
+    "no-doubled-conjunctive-particle-ga": true,
+    "no-doubled-conjunction": true,
+    "ja-hiragana-keishikimeishi": true,
+    "ja-hiragana-fukushi": true,
+    "ja-hiragana-hojodoushi": true,
+    "general-novel-style-ja": {
+      "chars_leading_paragraph": false,
+      "no_punctuation_at_closing_quote": true,
+      "space_after_marks": false,
+      "even_number_ellipsises": false,
+      "even_number_dashes": false,
+      "appropriate_use_of_punctuation": true,
+      "appropriate_use_of_interpunct": false,
+      "appropriate_use_of_choonpu": false,
+      "appropriate_use_of_minus_sign": false,
+      "max_arabic_numeral_digits": false
+    },
+    "no-mixed-zenkaku-and-hankaku-alphabet": true,
+    "preset-ja-engineering-paper": true,
+    "preset-ja-spacing": true,
+    "preset-ja-technical-writing": {
+      "ja-no-mixed-period": {
+        "periodMark": "．"
+      },
+      "no-doubled-joshi": false,
+      "sentence-length": false
+    },
+    "preset-jtf-style": {
+      "1.2.1.句点(。)と読点(、)": false,
+      "1.2.2.ピリオド(.)とカンマ(,)": false,
+      "4.1.3.ピリオド(.)、カンマ(,)": false
+    },
+    "max-kanji-continuous-len": {
+      max: 8, // 長い用語が多いため、8文字まで許容する
+      allow: ["倍精度浮動小数点数"]
+    },
+  }
 }
